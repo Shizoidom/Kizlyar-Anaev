@@ -29,6 +29,7 @@ class Example(QMainWindow, Ui_MainWindow):
             qp.setPen(QColor(*self.color))
             qp.setBrush(QColor(*self.color))
             self.x, self.y = SCREEN_SIZE[0] // 2 - self.size // 2, SCREEN_SIZE[1] // 2 - self.size // 2
+            
             if self.figure == 'circle':
                 qp.drawEllipse(self.x, self.y, self.size, self.size)
             qp.end()
