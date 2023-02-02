@@ -11,7 +11,7 @@ class Example(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.flag = False
-        self.setWindowTitle('Git и желтые окружности')
+        self.setWindowTitle('Git и случайные окружности')
         self.pushButton.clicked.connect(self.draw)
         self.coords = []
 
